@@ -1,13 +1,21 @@
-function display(val){
-    document.getElementById('result').value += val
-    return val
+// let output = document.querySelector('#display');
+// function display(arg) {
+//     output.innerText += arg;
+// }
+
+let display1 = document.getElementById("display1");
+
+function display(arg) {
+    display1.value += arg;
 }
-function solve(){
-    let x = document.getElementById('result').value
-    let y = eval(x);
-    document.getElementById('result').value = y
-    return y
+
+function solve() {
+    display1.value = eval(display1.value)
 }
-function clearScreen(){
-    document.getElementById('result').value = ''
+
+function clearScreen() {
+    display1.value = "";
 }
+
+// let btnComma = addEventListener('click',)
+// function addEventListener(
