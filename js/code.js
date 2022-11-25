@@ -3,6 +3,9 @@
 //     output.innerText += arg;
 // }
 
+// let operators = doc.querySelectorAll('display1');
+// let array = [];
+
 let display1 = document.getElementById("display1");
 
 function display(arg) {
@@ -16,6 +19,21 @@ function solve() {
 function clearScreen() {
     display1.value = "";
 }
+function del() {
+    display1.value=display1.value.slice(0,-1)
+}
 
-// let btnComma = addEventListener('click',)
-// function addEventListener(
+function displayComa(anyVal){
+    if(!display1.value.includes(".") ) {
+        display1.value += anyVal;
+    }
+}
+
+// operators.forEach(operator => {
+//     operators.addEventListener('click', (e) => {
+//         arr = [];
+//         screen.value += operators.text
+//     })
+// })
+
+

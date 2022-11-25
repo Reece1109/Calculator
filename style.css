@@ -1,12 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.calculator {
+    margin: auto;
+    padding-top: 100px;
+    height: 700px;
+    width: 430px;
+    margin:auto
+}
+
 .container {
-    max-width: 300px;
-    margin: 10vh auto 0 auto;
+    width: 390px;
+    margin: auto;
     box-shadow: 0px 0px 43px 17px rgba(150,150,150,1);
 }
 
-#display1 {
+.display-container {
+    /* margin: auto; */
+    width: 60vh;
     text-align: right;
     height: 70px;
+    color: black;
+    font-size: 25px;
+}
+
+#display1 {
+    margin: auto;
+    width: 100%;
+    text-align: right;
+    height: 100%;
     color: black;
     line-height: 70px;
     padding: 16px 8px;
